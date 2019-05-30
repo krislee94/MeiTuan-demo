@@ -31,7 +31,9 @@ export default class HomeGridView extends PureComponent<Props> {
             <HomeGridItem 
               info={info}
               key={index}
-              onPress={()=>{this.props.menuonPress(index)}}
+              onPress={()=>{
+                this.props.menuonPress(index)}
+              }
             />
           ))
         }

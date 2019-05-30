@@ -12,6 +12,7 @@ import color from './widget/color';
 import WebScene from './widget/WebScene';
 
 import TabBarItem from './widget/TabBarItem';
+import AboutHuaTai from './scene/Mine/AboutHuaTai'
 
 export default class RootScene extends PureComponent {
 
@@ -119,7 +120,8 @@ export default class RootScene extends PureComponent {
   
   const AppNavigator = createStackNavigator({
     Tab:{screen:Tab},
-    WebScene:{screen: WebScene}
+    WebScene:{screen: WebScene},
+    About:{screen:AboutHuaTai}
   },{
     defaultNavigationOptions: {
       headerBackTitle: null,

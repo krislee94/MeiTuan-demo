@@ -4,7 +4,7 @@ import { View, Text, StyleSheet, StatusBar, Image, TouchableOpacity, ScrollView,
 import { Heading2, Heading3, Paragraph } from '../../widget/Text'
 import { screen, system } from '../../common'
 import { color, DetailCell, NavigationItem, EmptyView } from '../../widget'
-
+// import AboutHuaTai from './AboutHuaTai';
 
 
 
@@ -81,7 +81,7 @@ export default class MineScene extends PureComponent {
         ],
         [
           { title: '客服中心', image: require('../../img/mine/icon_mine_customerService.png') },
-          { title: '关于美团', subtitle: '我要合作', image: require('../../img/mine/icon_mine_aboutmeituan.png') }
+          { title: '关于华泰', subtitle: '我要合作', image: require('../../img/mine/icon_mine_aboutmeituan.png') }
         ]
       ]
     )
@@ -89,6 +89,7 @@ export default class MineScene extends PureComponent {
 
   //处理数据源
   detailData = ()=>{
+    const { navigate,push } = this.props.navigation;
     //拿到数据源
     let dataSource = this.getDataList();
     //定义一个cells数组
@@ -103,6 +104,9 @@ export default class MineScene extends PureComponent {
           title={data.title} 
           subtitle={data.subtitle} 
           key={data.title}
+          onPress={()=>{
+            navigate('About')
+          }}
           />
         )
         cells.push(cell)

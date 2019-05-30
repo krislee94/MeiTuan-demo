@@ -12,7 +12,6 @@ import HomeMenuView from './HomeMenuView';
 import HomeGridView from './HomeGridView';
 import GuessLike from './GuessLike'
 import GroupCell from './GroupCell'
-
 import api from '../../mock';
 
 export default class HomeScene extends Component {
@@ -56,7 +55,8 @@ export default class HomeScene extends Component {
   })
 
   onGridpress=(index)=>{
-    console.log(index);
+    let discount = api.discount.data[index];
+    this.props.navigation.navigate('About');
   }
 
 
@@ -91,7 +91,7 @@ export default class HomeScene extends Component {
 
                   <View  style={styles.empstyle} />
                   
-                  <HomeGridView  menuInfo={api.discount.data}  menuonPress={()=>{this.onGridpress(index)}}/>
+                  <HomeGridView  menuInfo={api.discount.data}  menuonPress={this.onGridpress}/>
 
                   <View  style={styles.empstyle} />
                   

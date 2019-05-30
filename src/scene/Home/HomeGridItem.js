@@ -24,7 +24,7 @@ export default class HomeGridItem extends PureComponent<Props> {
     let imageUrl = info.imageurl.replace('w.h', '120.0')
   
     return (
-      <TouchableOpacity style={styles.container} onPress={this.props.onPress}>
+      <TouchableOpacity style={styles.container} onPress={onPress}>
             <View>
             <Heading2 style={{ color: color, marginBottom: 10 }}>{title}</Heading2>
             <Heading3 >{subtitle}</Heading3>

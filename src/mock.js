@@ -59,6 +59,63 @@ export default {
           subTitle:'这是鞋子的信息副标题展示',
           price:'3500'
         }
+      ],
+
+      huatai:[
+        {
+          number:'5.79%',
+          subtitle:'近三年涨跌',
+          title:'国泰成长优选混合',
+          reason:'挂钩标的上证50指数市场盈利率创新高'
+        },
+        {
+          number:'- -',
+          subtitle:'近三年涨跌',
+          title:'国泰成长优选混合',
+          reason:'挂钩标的上证50指数市场盈利率创新高'
+        },
+        {
+          number:'1.79%',
+          subtitle:'近三年涨跌',
+          title:'国泰成长优选混合',
+          reason:'挂钩标的上证50指数市场盈利率创新高'
+        },
+                {
+          number:'0.79%',
+          subtitle:'近三年涨跌',
+          title:'国泰成长优选混合',
+          reason:'挂钩标的上证50指数市场盈利率创新高'
+        },
+                {
+          number:'7.79%',
+          subtitle:'近三年涨跌',
+          title:'国泰成长优选混合',
+          reason:'挂钩标的上证50指数市场盈利率创新高'
+        },
+                {
+          number:'4.79%',
+          subtitle:'近三年涨跌',
+          title:'国泰成长优选混合',
+          reason:'挂钩标的上证50指数市场盈利率创新高'
+        },
+                {
+          number:'- -',
+          subtitle:'近三年涨跌',
+          title:'国泰成长优选混合',
+          reason:'挂钩标的上证50指数市场盈利率创新高'
+        },
+                {
+          number:'2.79%',
+          subtitle:'近三年涨跌',
+          title:'国泰成长优选混合',
+          reason:'挂钩标的上证50指数市场盈利率创新高'
+        },
+                {
+          number:'1.79%',
+          subtitle:'近三年涨跌',
+          title:'国泰成长优选混合',
+          reason:'挂钩标的上证50指数市场盈利率创新高'
+        }
       ]
 
 
